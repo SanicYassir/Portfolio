@@ -1,0 +1,20 @@
+.container {
+  height: 100vh !important;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Title:hover {
+  transform: translate(10px);
+  transition: all 0.4s ease-in;
+  color: #fff;
+  background-color: #000;
+}
+
+.Title {
+  transition: all 0.4s ease-in;
+}

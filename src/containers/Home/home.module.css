@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap");
+.container {
+  z-index: 1;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 35rem;
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-position: center center;
+  padding: 2rem;
+  background: url("../../assets/background-image.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.container p {
+  font-family: "ZCOOL KuaiLe", cursive;
+  font-weight: bold;
+}
+h1 {
+  font-family: "Dosis", sans-serif !important;
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+  margin-bottom: 10px;
+  font-size: 2.5rem !important;
+}
+
+h1 span:hover {
+  background-color: black;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+h1 span {
+  transition: all 0.5s ease-in-out;
+  padding: 0 2px;
+}
+
+h1 span:nth-child(1) {
+  background-color: black;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+h1 span:nth-child(1):hover {
+  background-color: #fff;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 1.8rem !important;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  h1 {
+    transform: translateY(-80px);
+  }
+  .container p {
+    transform: translateY(-80px);
+  }
+}
+
+@media screen and (max-width: 390px) {
+  h1 {
+    transform: translateY(-70px);
+  }
+  .container p {
+    transform: translateY(-70px);
+  }
+}
+
+@media screen and (max-width: 359px) {
+  h1 {
+    transform: translateY(-40px);
+  }
+  .container p {
+    transform: translateY(-70px);
+  }
+}

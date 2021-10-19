@@ -1,0 +1,134 @@
+.Right,
+.Left,
+.Bottom,
+.AboutLeft {
+  position: absolute;
+  background-color: black;
+  z-index: 90;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.Right {
+  right: 0;
+  height: 100vh;
+  width: 75px;
+  transition: all 1s ease-in-out;
+}
+
+.Right span {
+  transform: rotate(90deg);
+  display: block;
+  transition: all 1s ease-in-out;
+}
+/*Css ANIMATION not working yet*/
+
+.Right:hover {
+  width: 50%;
+  transition: all 1s ease-in-out;
+}
+.Right:hover span {
+  transform: rotate(0deg);
+  font-size: 2rem;
+}
+
+.Left {
+  left: 0;
+  width: 85px;
+  height: 100vh;
+  transition: all 1s ease-in-out;
+}
+
+.Left span {
+  display: block;
+  transition: all 1s ease-in-out;
+  transform: rotate(-90deg);
+}
+/*Css ANIMATION not working yet*/
+.Left:hover {
+  transition: all 1s ease-in-out;
+  width: 50%;
+}
+
+.Left:hover span {
+  transform: rotate(0deg);
+  font-size: 2rem;
+}
+
+.Bottom {
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  height: 30px;
+  padding: 5px;
+  border-radius: 800% 800% 0 0;
+  transition: all 1s ease-in-out;
+}
+.Bottom span {
+  transition: all 1s ease-in-out;
+}
+
+.Bottom:hover {
+  height: 50%;
+  transition: all 1s ease-in-out;
+}
+
+.Bottom:hover span {
+  transition: all 1s ease-in-out;
+  font-size: 2rem;
+}
+
+/*aboutLeft*/
+
+.AboutLeft {
+  left: 0;
+  width: 85px;
+  height: 100vh;
+  transition: all 1s ease-in-out;
+}
+
+.AboutLeft span {
+  display: block;
+  transition: all 1s ease-in-out;
+  transform: rotate(-90deg);
+}
+/*Css ANIMATION not working yet*/
+.AboutLeft:hover {
+  transition: all 1s ease-in-out;
+  width: 50%;
+}
+
+.AboutLeft:hover span {
+  transform: rotate(0deg);
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .Desktop {
+    display: block;
+  }
+  .Mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .Mobile {
+    display: block;
+    background-color: transparent;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+  }
+  .Desktop {
+    display: none;
+  }
+}

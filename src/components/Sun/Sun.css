@@ -1,0 +1,22 @@
+.st0 {
+  fill: #0a0a09;
+}
+
+#Layer_1 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 89;
+  transition: all 0.5s ease-in-out;
+}
+#Layer_1:hover {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 540px) {
+  #Layer_1 {
+    width: 80px;
+    height: 80px;
+  }
+}
