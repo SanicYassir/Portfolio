@@ -3,12 +3,9 @@ import styles from "./Drawer.module.css";
 import { NavLink } from "react-router-dom";
 
 const Drawer = (props) => {
-  console.log(props);
-
   const classes = [styles.Drawer, props.open ? styles.ShowDrawer : ""].join(
     " "
   );
-  console.log(classes);
   return (
     <div className={classes}>
       <div className={styles.Container} onClick={props.click}>

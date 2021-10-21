@@ -17,7 +17,9 @@ const Card = (props) => {
         </div>
 
         <div className="card-content" style={{ height: "50%", width: "100%" }}>
-          <span className="card-title">{props.title}</span>
+          <span className="card-title" style={{ fontSize: "1.3rem" }}>
+            {props.title}
+          </span>
         </div>
       </div>
     </div>
